@@ -209,7 +209,7 @@ h2 {
   left: -15px;
 }
 
-.professionalExperience .rEntry:hover {
+.professionalExperience .rEntry:hover, .clickBorder:hover {
   border: 1px solid #F56029;
   cursor: pointer;
 }
