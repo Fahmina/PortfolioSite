@@ -1,0 +1,364 @@
+html { overflow-y: scroll; }
+
+body {
+  margin: 0;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #F56029;
+}
+
+#nav a {
+  color: black;
+}
+
+.topbar {
+	margin-top: 100px;
+	position: relative;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	/*border: 1px solid green;*/
+	/*background-color: #eee;*/
+	/*line-height: 48px;*/
+}
+
+#nav {
+  position: absolute;
+  right:25px;
+  top:10px;
+  /*background-color:green;*/
+  height:50px;
+  margin-left:40px;
+}
+
+#navCursor.projects {
+  left: 0px;
+  width: 100px;
+}
+#navCursor.bio {
+  left: 155px;
+  width: 60px;
+}
+#navCursor.resume {
+  left: 270px;
+  width: 85px;
+}
+
+#navCursor {
+  box-sizing: border-box;
+ -webkit-transition: width .5s, left .5s;
+  transition: width .5s, left .5s;
+  position: absolute;
+  height: 50px;
+  border: 2px solid red;
+  left: 0px;
+  width: 100px;
+}
+
+.navItem {
+  position: relative;
+  bottom: -12px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  margin-right: 50px;
+  padding: 12px 18px;
+  font-size: 17px;
+  letter-spacing: 0px;
+  /*border: 1px solid red;*/
+  /*background-color:blue;*/
+}
+
+.mainTitle, h1, h2 {
+  color: #888;
+  font-size: 47px;
+  font-family: 'Playfair Display', serif;
+  margin-right: 44px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  clear:both;
+}
+
+.left h2 {
+  margin-bottom: 35px;
+}
+
+.content {
+  position: relative;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*border: 1px solid green;*/
+}
+.content.fullwidth {
+  width: 1010px;
+}
+
+.project {
+  border: 1px solid transparent;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom 0px;
+  width: 660px;
+  height: 430px;
+  text-align: center;
+}
+
+.project:hover {
+    border: 1px solid red;
+}
+
+.project:hover .projectLabel {
+  display: block;
+}
+
+.projectLabel {
+	display: none;
+	color: #f00;
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 10px;
+	width: 540px;
+    height: 360px;
+    text-align: right;
+    font-size: 17px;
+}
+
+.placeholderImage {
+  width: 540px;
+  height: 360px;
+  background-color: #888;
+}
+
+.biotext, .resumetext {
+	font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.biotext {
+  font-size: 24px;
+}
+
+.resumetext {
+  padding: 0px;
+}
+
+.beforeIndent {
+  margin: 0;
+}
+
+.indent {
+  margin-top:0;
+  padding-left: 40px; 
+}
+
+/* Resume Stuff */
+
+.rTitle, .rSubtitle, .rSubitemTitle, .rPosition {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #F56029;
+}
+
+.rSubtitle {
+  font-weight: 300;
+}
+
+.rSubitemTitle {
+  color: #999;
+  margin-top: 20px;
+}
+
+.rHeader {
+  position: relative;
+}
+
+.rPosition {
+  /*position: absolute;*/ float:right;
+  font-size: 22px;
+  top: 0;
+  color: black;
+  min-width: 325px;
+  /*left: 450px;*/
+  right: 0;
+}
+
+.rEntry {
+  position: relative;
+  clear: both;
+  border: 1px solid transparent;
+  padding: 15px;
+  left: -15px;
+}
+
+.professionalExperience .rEntry:hover {
+  border: 1px solid #F56029;
+  cursor: pointer;
+}
+
+.orange {
+  color: #F56029;
+}
+
+.prizeYear {
+  color: black;
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+.skills .prizeYear {
+  position: absolute;
+  left: 200px;
+}
+
+.skills .rTitle, .awards .rTitle {
+  margin-bottom: 10px;
+}
+
+.skills .rTitle.indent, .skills .rTitle.beforeIndent {
+  margin-bottom: 0;
+}
+
+/* Project pages stuff */
+
+p, h1, h2 {
+  text-align: left;
+}
+
+.projectHeader {
+   font-family: 'Oswald', sans-serif;
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.projectHeader .title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #F56029;
+  line-height: 30px;
+}
+
+.projectHeader .medium {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.projectHeader .date {
+  font-size: 22px;
+}
+
+.fullWidthText {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: black;
+}
+
+.inlineTitle {
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+  font-size: 22px;
+}
+
+.slide {
+  overflow: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  position: relative;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  line-height: 24px; 
+}
+
+.slide h2 {
+  margin-left: 10px;
+}
+
+.slide.nomargin {
+  margin-bottom: 0;
+}
+
+.slide img {
+  max-width: 100%;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.right>img, .left>img {
+  width: 400px;
+}
+.right img:only-child {
+  height: 100%;
+}
+
+.slideFull {
+  overflow: hidden;
+  text-align:center;
+}
+
+.slideInner {
+  padding: 50px;
+}
+
+.right, .left, .bottom, .top {
+  box-sizing: border-box;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+}
+
+.right.hasText, .left.hasText {
+  font-size: 21px;
+  width: 45%;
+}
+.needSpacer img:first-child {
+  margin-bottom: 50px;
+}
+
+.right, .left {
+  width: 50%;
+}
+
+.right {
+  position:relative;
+  float: right;
+  right: 0;
+}
+
+.left {
+  position: relative;
+  left: 0;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.top, .bottom {
+  height: 50%;
+}
+.bottom {
+  bottom: 0;
+}
+.top {
+  top: 0;
+}
