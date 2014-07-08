@@ -2,6 +2,7 @@ html { overflow-y: scroll; }
 
 body {
   margin: 0;
+  margin-bottom: 300px;
   font-weight: 300;
 }
 
