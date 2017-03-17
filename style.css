@@ -159,6 +159,7 @@ h2 {
 
 .resumetext {
   padding: 0px;
+  color: black
 }
 
 .beforeIndent {
@@ -205,7 +206,7 @@ h2 {
 .rEntry {
   position: relative;
   clear: both;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 15px;
   left: -15px;
 }
